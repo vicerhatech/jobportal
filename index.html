@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobPortal - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Job<span>Portal</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">My Applications</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Find Your Next Job Opportunity</h1>
+      <p>
+        Search through quality job openings, explore job details,
+        and submit applications easily.
+      </p>
+
+      <form class="search-box" id="heroSearchForm">
+        <input type="text" id="heroKeyword" placeholder="Job title or keyword" />
+        <input type="text" id="heroLocation" placeholder="Location or Remote" />
+        <button class="btn btn-primary" type="submit">Search Jobs</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Jobs</h2>
+      <p class="section-subtitle">A few selected opportunities for you.</p>
+
+      <div class="jobs-grid" id="featuredJobs"></div>
+
+      <div class="text-center mt-30">
+        <a href="jobs.html" class="btn btn-outline">Explore All Jobs</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>JobPortal</strong> - Mini job board project</p>
+      <p>&copy; 2026 JobPortal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/jobs-data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

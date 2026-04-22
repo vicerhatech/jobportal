@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobPortal - Jobs</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Job<span>Portal</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="jobs.html" class="active">Jobs</a>
+        <a href="applications.html">My Applications</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Browse Available Jobs</h1>
+      <p>Search and filter jobs based on your interest.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 10px;">
+    <div class="container filters-layout">
+      <aside class="card filters-box">
+        <h3>Filters</h3>
+
+        <div class="filter-group">
+          <label for="keywordFilter">Keyword</label>
+          <input type="text" id="keywordFilter" placeholder="e.g. frontend" />
+        </div>
+
+        <div class="filter-group">
+          <label for="locationFilter">Location</label>
+          <select id="locationFilter">
+            <option value="">All Locations</option>
+            <option value="Remote">Remote</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Ibadan">Ibadan</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="typeFilter">Job Type</label>
+          <select id="typeFilter">
+            <option value="">All Types</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Contract">Contract</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="categoryFilter">Category</label>
+          <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Design">Design</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Data">Data</option>
+            <option value="Quality Assurance">Quality Assurance</option>
+          </select>
+        </div>
+
+        <button class="btn btn-outline" id="clearFiltersBtn">Clear Filters</button>
+      </aside>
+
+      <main>
+        <div class="jobs-list" id="jobsList"></div>
+      </main>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>JobPortal</strong> - Mini job board project</p>
+      <p>&copy; 2026 JobPortal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/jobs-data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/jobs.js"></script>
+</body>
+</html>
